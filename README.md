@@ -53,7 +53,7 @@ Venn diagrams plotted between _'toxic'_ and the other five (5) possible toxicity
 - The project target is to apply swift corrective action against lingering problematic comments in the public sphere by detecting offensive words in a given comment string
 - Since ~94% of problematic comments are marked _'toxic'_, it appears that there is little value to add more than 1 toxicity flag to any given comment string since the resulting corrective action is the same for any comment string with 1 or more toxicity flags (ie. removal from public sphere)
 
-With this in mind, a new simplified flag - _**'flagged'**_ - was created, and the project focus is to discern, broadly, problematic comments from the non-problematic ones:
+**With this in mind, a new simplified flag - _'flagged'_ - was created, and the project focus is to discern, broadly, problematic comments from the non-problematic ones:**
 
 | Column Header | Data Type | Description |
 | --- | --- | --- |
@@ -81,8 +81,8 @@ With the highest Recall score and a competitive F1-Score metric, one can infer t
 
 ### Analysis Limitations
 
-- It was observed that some of the most frequent words found amongst 'flagged' comments are seemingly innocent words such as 'Wikipedia', 'as' and 'people', possibly due to the usage of a default stop word library during the analysis (**nltk.corpus.stopwords** for Python)
-- Analysis of each eligible word / token did not factor in the context in which the word was used in the comment string (eg. the word 'cut' can be used as an action word for either progrssive work or self-harm)
+- It was observed that some of the most frequent words found amongst _'flagged'_ comments are seemingly innocent words such as '_Wikipedia'_, _'as'_ and _'people'_, possibly due to the usage of a default stop word library during the analysis (**nltk.corpus.stopwords** for Python)
+- Analysis of each eligible word / token did not factor in the context in which the word was used in the comment string (eg. the word _'cut'_ can be used as an action word for either progressive work or self-harm)
 - Uni-gram analysis was employed during this project, where each word / token was analysed independently and word order in a comment string was not considered
 - There were instances of delibrate misspelling in comment strings to circumvent existing online safety restrictions - after having applied the pre-processing measures to streamline all words / tokens for analysis, the result of these words might be unrecoginisable, and treated as a completely new word during modeling
 
