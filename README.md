@@ -1,6 +1,6 @@
 ## DABPT01 - General Assembly Singapore - Capstone Project - Classification of Toxic Social Media Comments
 ### Introduction & Project Overview
-This repository is home to my capstone project for **General Assembly Singsapore: Data Analytics Bootcamp**, attempting classification of toxic social media comments by way of Natural Language Processing (NLP) modeling techniques (ie. problematic VS non-problematic).
+This repository is home to my capstone project for **General Assembly Singapore: Data Analytics Bootcamp**, attempting classification of toxic social media comments by way of Natural Language Processing (NLP) modeling techniques (ie. problematic VS non-problematic).
 
 The rise of online platforms has significantly transformed the way individuals interact, share ideas, and express opinions. While this digital evolution has offered numerous benefits, it has also given rise to a slew of harmful behaviours, including the spread of toxic and offensive comments. The anonymity provided by the internet often emboldens users to post inflammatory, abusive, or otherwise inappropriate content without fear of direct consequences. This growing prevalence of online toxicity poses serious dangers, ranging from psychological distress among victims to broader social polarization and real-world repercussions.
 
@@ -91,4 +91,4 @@ With the highest Recall score and a competitive F1-Score metric, one can infer t
 
 - Further customisation / increase of the stop word list for future analyses can be looked into, so that analysis of offensive words could be narrowed down further
 - The models used in the present analysis were the most fundamental and commonly-used (Logistic Regression / Multinomial NB) - given the multi-label nature of this dataset, more sophisticated models or techniquees could be employed to analyse words / tokens in accordance to the specified toxicity flag in more detail
-- Employ higher n-gram analysis (ie. bi-gram, tri-gram) to incorporate word order / context into modeling, so that resulting predictions could be more accurate 
+- Employ higher _n_-gram analysis (ie. bi-gram, tri-gram) to incorporate word order / context into modeling, so that resulting predictions could be more accurate 
