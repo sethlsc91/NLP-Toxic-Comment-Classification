@@ -16,9 +16,9 @@ Potential applications of this project span a wide range of digital platforms wh
 By integrating these tools into content moderation workflows, platforms can proactively identify and flag harmful language before it escalates. Additionally, such models can support content filtering in educational forums, gaming communities, and public review sites, ensuring that discussions remain civil and inclusive.
 
 ### Dataset
-For the purpose of this project, the dataset used contains **159,571** comments.
+For the purpose of this project, the dataset used (train.csv) contains **159,571** comments, and can be obtained from [Kaggle](https://www.kaggle.com/datasets/julian3833/jigsaw-toxic-comment-classification-challenge/data).
 
-Social media comment data was obtained from [Kaggle](https://www.kaggle.com/datasets/julian3833/jigsaw-toxic-comment-classification-challenge/data) - a quick glance at some of the comments present in the data suggests that they were scraped from Wikipedia, a free online encyclopedia written and maintained by anyone and everyone in the world.
+A quick glance at some of the comments present in the data suggests that they were scraped from Wikipedia, a free online encyclopedia written and maintained by anyone and everyone in the world.
 
 The data dictionary is as follows - this will provide some context to how the data is being analysed and interpreted:
 
