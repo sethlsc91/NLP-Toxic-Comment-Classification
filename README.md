@@ -52,7 +52,7 @@ Various pre-processing measures were first applied to the raw comment strings fo
 - Tokenisation
 - Lemmatisation
 
-Among all **159,571** comments analysed, **~10%** of them (16,225) had at least one (1) of the aforementioned toxicity flags attributed to them. Also, **~94%** of these problematic comments (15,294) had the 'toxic' flag marked against them, suggesting that usage of this flag is a baseline for a problematic comment to be deemed so.
+Among all **159,571** comments analysed, **~10%** of them (16,225) had at least one (1) of the aforementioned toxicity flags attributed to them. Also, **~94%** of these problematic comments (15,294) had the _'toxic'_ flag marked against them, suggesting that usage of this flag is a baseline for a problematic comment to be deemed so.
 
 ![Image](https://github.com/user-attachments/assets/22d1bebe-604f-48cc-8a44-49a42992e701)
 
