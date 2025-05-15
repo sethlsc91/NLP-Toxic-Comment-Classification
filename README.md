@@ -93,9 +93,15 @@ By applying an (80:20) train-test split on the dataset and putting it through al
 | Metric | cvec_logr | cvec_nb | tvec_logr | tvec_nb |
 | --- | --- | --- | --- | --- |
 | Recall | 68.04% | 74.58% | 62.10% | 16.46% |
+| Precision | 85.09% | 73.07% | 92.01% | 99.26% |
 | F1-Score | 75.62% | 73.81% | 74.15% | 28.23% |
 
-With the highest Recall score and a competitive F1-Score metric, one can infer that the **Count Vectoriser - Multinomial NB combination (cvec_nb)** performed best at predicting problematic comments.
+The above statistical metrics are explained in the context of this project below:
+- **Recall score** measures the proportion of known problematic comments being incorrectly flagged as innocent - the higher the percentage, the better the vectoriser-model is at flagging out problematic comments
+- **Precision score** measures the proportion of innocent comments being incorrect flagged as problematic - the lower the percentage, the more likely the vectoriser-model is at flagging out innocent comments as problematic
+- **F1-Score** represents the harmonic mean between Recall and Precision scores, and ensures that one does not place too much emphasis on either Recall or Precision scores when identifying the most suitable vectoriser-model
+
+Given that the aim of this project is to identify, effectively, problematic comments and remove them from public online platforms (where applicable) as soon as possible, one can infer that the **Count Vectoriser - Multinomial NB combination (cvec_nb)** performed best at predicting problematic comments due to it having achieved the highest Recall score and a competitive F1-Score metric.
 
 ## Analysis Limitations
 ![Image](https://github.com/user-attachments/assets/50c30bcb-ce8a-48da-b7dc-0d5ce3ca11c5)
@@ -103,7 +109,6 @@ With the highest Recall score and a competitive F1-Score metric, one can infer t
 - Analysis of each eligible word / token did not factor in the context in which the word was used in the comment string (eg. the word _'cut'_ can be used as an action word for either progressive work or self-harm)
 - Uni-gram analysis was employed during this project, where each word / token was analysed independently and word order in a comment string was not considered
 - There were instances of delibrate misspelling in comment strings to circumvent existing online safety restrictions - after having applied the pre-processing measures to streamline all words / tokens for analysis, the result of these words might be unrecoginisable, and treated as a completely new word during modeling
-
 
 ## Future Work
 
