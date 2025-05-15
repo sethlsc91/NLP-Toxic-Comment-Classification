@@ -34,8 +34,8 @@ The data dictionary is as follows - this will provide some context to how the da
 | --- | --- | --- |
 | id | _obj_ | Unique identifier for online comment |
 | comment_text | _obj_ | Online comment in full |
-| toxic | _int_ | Binary flag if comment deemed toxic ([1]: Yes, [0]: No) |
-| severe_toxic | _int_ | Binary flag if comment deemed very toxic ([1]: Yes, [0]: No) |
+| toxic | _int_ | Binary toxicity flag if comment deemed toxic ([1]: Yes, [0]: No) |
+| severe_toxic | _int_ | Binary toxicity flag if comment deemed very toxic ([1]: Yes, [0]: No) |
 | obscene | _int_ | Binary toxicity flag if comment deemed obscene ([1]: Yes, [0]: No) |
 | threat | _int_ | Binary toxicity flag if comment deemed threatening ([1]: Yes, [0]: No) |
 | insult | _int_ | Binary toxicity flag if comment deemed insulting ([1]: Yes, [0]: No) |
